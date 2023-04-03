@@ -27,17 +27,17 @@ console.log("Pause Video");
 });
 
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate *= 0.95
+	video.playbackRate *= 0.90
 console.log("speed is" + video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate /= 0.95
+	video.playbackRate /= 0.90
 console.log("speed is" + video.playbackRate);
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	video.currentTime +=15
+	video.currentTime +=10
 	if( video.currentTime >= video.duration)
 	video.currentTime = 0
 
